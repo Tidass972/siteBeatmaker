@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Cinzel:wght@500;600&family=Raleway:ital,wght@1,700&display=swap');
+    </style>
+    <title>Beatmaker</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <section class="nav-bar">
+        <a href="index.html"><img src="images/logo.jpg" alt="Ceci est mon logo" class="logo"><p id="nom">Wolfi</p></a>
+
+        <nav class="navbar navbar-dark navbar-expand-md sticky-top">
+            <div class="container">    
+                <div class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#monMenuDeroulant">
+                    <span class="navbar-toggler-icon"></span>
+                </div>
+
+                <div class="collapse navbar-collapse" id="monMenuDeroulant">
+                    <ul id="topmenu" class="navbar-nav menu">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link active">Accueil</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a href="blog.html" class="nav-link">Blog</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a href="apropos.html" class="nav-link">A propos</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a href="contact.html" class="nav-link">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </section>
+
+    <section class="header pt-4 text-center" style="background-image: url('images/header.png'); background-size: cover; background-position: center center; min-height: 100vh;">
+        <h2>The beatmaker is it</h2>
+    </section>
+    
+    
+    <!-- Intégration de l'animation -->
+    <div class="container">
+        <div class="red-div"></div>
+        <div class="green-div"></div>
+    </div>
+
+    <!--------------------------------------------------------------------SECTION DES BEATS----------------------------------------------------------------------------------->
+    <section class="formations mt-3">
+        <h1 class="gradient-text">Mes beats récents</h1>
+
+        <p>Explorez ma dernière collection de beats et laissez-vous séduire par l'essence de ma créativité musicale. Vos oreilles seront enchantées, et vos projets musicaux    trouveront l'accompagnement parfait dans ces créations récentes.</p>
+
+        <div class="row">
+    
+            <div class="col-lg-4 col-md-6 mb-3">
+                <div class="card m-3 formations-col gradient-text h-100">
+                   <!-- Mettez chaque item dans une carte bootstrap -->
+                    <img src="images/BOUFTOU.png" alt="Echarpe" class="card-img-top" />
+                    <div class="card-body" style="min-height: 130px">
+                        <h3>Bouftou</h3>
+                        <p>Plongez dans un rythme envoûtant avec ce beat aux basses profondes, idéal pour des paroles percutantes.</p><br>
+                    </div>
+                    <div class="card-footer">
+                        <button type="button" class="btn w-100 btn-outline-secondary btn-beat" target="_blank" data-bs-toggle="modal" data-bs-target="#bouftouModal" >Découvrir ce beat</button>
+                    </div>
+                </div>
+            </div> 
+  
+
+            <div class="col-lg-4 col-md-6 mb-3">
+                <div class="card m-3 formations-col gradient-text h-100">
+                    <!-- Mettez chaque item dans une carte bootstrap -->
+                    <img src="images/PLAYV COMPLET.png" alt="Echarpe" class="card-img-top"/>
+                    <div class="card-body" style="min-height: 130px">
+                        <h3>PLAYV COMPLET</h3>
+                        <p class="m-2">Laissez-vous emporter par la douce mélodie de ce beat, parfait pour créer une ambiance captivante.</p><br><br>
+                    </div>
+                    <div class="card-footer">
+                        <button type="button" class="btn w-100 btn-outline-secondary btn-beat" target="_blank" data-bs-toggle="modal" data-bs-target="#playvComplet" >Découvrir ce beat</button>
+                        <!-- <a href="https://www.beatstars.com/beat/full-plav-16200765"  target="_blank" class="btn-beat">Découvrir ce beat</a> --> 
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-3">
+                <div class="card m-3 formations-col gradient-text h-100">
+                    <!-- Mettez chaque item dans une carte bootstrap -->
+                    <img src="images/BALTIMORE.png" alt="Echarpe" class="card-img-top card-img-top-custom"/>
+                    <div class="card-body" style="min-height: 90px">
+                        <h3>BALTIMORE <br></h3>
+                        <p>Explorez l'univers électronique avec ce beat dynamique qui fusionne des sons futuristes et des rythmes palpitants.</p><br>
+                    </div>
+                    <div class="card-footer">
+                        <button type="button" class="btn w-100 btn-outline-secondary btn-beat" target="_blank" data-bs-toggle="modal" data-bs-target="#baltimore" >Découvrir ce beat</button>
+                        <!-- <a href="https://www.beatstars.com/beat/baltimore-16200719"  target="_blank" class="btn-beat">Découvrir ce beat</a> --> 
+                    </div>
+                </div>
+            </div>
+        
+
+            <div class="col-lg-4 col-md-6 mb-3">
+                <div class="card m-3 formations-col gradient-text h-100">
+                    <!-- Mettez chaque item dans une carte bootstrap -->
+                    <img src="images/PARADIS.png" alt="Echarpe" class="card-img-top card-img-top-custom"/>
+                    <div class="card-body" style="min-height: 130px">
+                        <h3>PARADIS <br><br></h3>
+                        <p>Préparez-vous à l'action avec ce beat énergique, chargé d'adrénaline et conçu pour des moments intenses.</p>
+                    </div>
+                    <div class="card-footer">
+                        <button type="button" class="btn w-100 btn-outline-secondary btn-beat" target="_blank" data-bs-toggle="modal" data-bs-target="#paradis" >Découvrir ce beat</button>
+                        <!-- <a https://www.beatstars.com/beat/paradise-16200523"  target="_blank" class="btn-beat">Découvrir ce beat</a> --> 
+                    </div>
+                </div>
+            </div>
+        
+
+            <div class="col-lg-4 col-md-6 mb-3">
+                <div class="card m-3 formations-col gradient-text h-100">
+                    <!-- Mettez chaque item dans une carte bootstrap -->
+                    <img src="images/BATIMENT.png" alt="Echarpe" class="card-img-top card-img-top-custom"/>
+                    <div class="card-body" style="min-height: 130px">
+                        <h3>BUILDING <br></h3>
+                        <p>Ce beat vous transporte instantanément sur une plage tropicale avec ses rythmes détendus et son ambiance chill.</p><br><br>
+                    </div>
+                    <div class="card-footer">
+                        <button type="button" class="btn w-100 btn-outline-secondary btn-beat" target="_blank" data-bs-toggle="modal" data-bs-target="#batiment" >Découvrir ce beat</button>
+                        <!-- <a href="https://www.beatstars.com/beat/building-16200447"  target="_blank" class="btn-beat">Découvrir ce beat</a> --> 
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-3">
+                <div class="card m-3 formations-col gradient-text h-100">
+                    <!-- Mettez chaque item dans une carte bootstrap -->
+                    <img src="images/TSHOESHOT.png" alt="Echarpe" class="card-img-top card-img-top-custom"/>
+                    <div class="card-body" style="min-height: 130px">
+                        <h3>TSHOESHOT <br><br></h3>
+                        <p class="mb-3">Laissez-vous bercer par la mélodie douce de ce beat acoustique, parfait pour des chansons douces et intimes.</p><br>
+                    </div>
+                    <div class="card-footer">
+                        <button type="button" class="btn w-100 btn-outline-secondary btn-beat" target="_blank" data-bs-toggle="modal" data-bs-target="#tshoeshot" >Découvrir ce beat</button>
+                        <!-- <a href="https://www.beatstars.com/beat/tshoeshot-16200680"  target="_blank" class="btn-beat">Découvrir ce beat</a> --> 
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-3">
+                <div class="card m-3 formations-col gradient-text h-100">
+                    <!-- Mettez chaque item dans une carte bootstrap -->
+                    <img src="images/PIEDS SUEURS.png" alt="Echarpe" class="card-img-top card-img-top-custom"/>
+                    <div class="card-body" style="min-height: 130px">
+                        <h3>KAKI SWEAT<br><br></h3>
+                        <p>Plongez dans un rêve éveillé, une expérience sonore immersive, idéal pour accompagner des moments héroïques</p>
+                    </div>
+                    <div class="card-footer">
+                        <button type="button" class="btn w-100 btn-outline-secondary btn-beat" target="_blank" data-bs-toggle="modal" data-bs-target="#echarpeModal" >Découvrir ce beat</button>
+                        <!-- <a href="https://www.beatstars.com/beat/kaki-sweat-16200410"  target="_blank" class="btn-beat">Découvrir ce beat</a> --> 
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-3">
+                <div class="card m-3 formations-col gradient-text h-100">
+                    <!-- Mettez chaque item dans une carte bootstrap -->
+                    <img src="images/GEEKE.png" alt="Echarpe" class="card-img-top card-img-top-custom"/>
+                    <div class="card-body" style="min-height: 130px">
+                        <h3>Gekee <br><br></h3>
+                        <p>Celui-ci vous transporte dans les rues de la Nouvelle-Orléans avec son swing irrésistible et ses mélodies envoûtantes.</p>
+                    </div>
+                    <div class="card-footer">
+                        <button type="button" class="btn w-100 btn-outline-secondary btn-beat" target="_blank" data-bs-toggle="modal" data-bs-target="#echarpeModal" >Découvrir ce beat</button>
+                        <!-- <a href="https://www.beatstars.com/beat/geeked-16200315"  target="_blank" class="btn-beat">Découvrir ce beat</a> --> 
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-3">
+                <div class="card m-3 formations-col gradient-text h-100">
+                    <!-- Mettez chaque item dans une carte bootstrap -->
+                    <img src="images/MAILLOT PIGMA.png" alt="Echarpe" class="card-img-top card-img-top-custom"/>
+                    <div class="card-body" style="min-height: 130px">
+                        <h3>PYGAMA JESEY <br><br></h3>
+                        <p>Celui-ci vous transporte dans les rues de la Nouvelle-Orléans avec son swing irrésistible et ses mélodies envoûtantes.</p>
+                    </div>
+                    <div class="card-footer">
+                        <button type="button" class="btn w-100 btn-outline-secondary btn-beat" target="_blank" data-bs-toggle="modal" data-bs-target="#echarpeModal" >Découvrir ce beat</button>
+                        <!-- <a href="https://www.beatstars.com/beat/geeked-16200315"  target="_blank" class="btn-beat">Découvrir ce beat</a> --> 
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-3">
+                <div class="card m-3 formations-col gradient-text h-100">
+                    <!-- Mettez chaque item dans une carte bootstrap -->
+                    <img src="images/MONOSPACE.png" alt="Echarpe" class="card-img-top"/>
+                    <div class="card-body" style="min-height: 130px">
+                        <h3>MONOSPACE<br><br></h3>
+                        <p>Explorez l'atmosphère mystérieuse de ce beat ambient, une symphonie de sons éthérés et de textures sonores.</p>
+                    </div>
+                    <div class="card-footer">
+                        <button type="button" class="btn w-100 btn-outline-secondary btn-beat" target="_blank" data-bs-toggle="modal" data-bs-target="#echarpeModal" >Découvrir ce beat</button>
+                        <!-- <a href="https://www.beatstars.com/beat/kaki-sweat-16200410"  target="_blank" class="btn-beat">Découvrir ce beat</a> --> 
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-3">
+                <div class="card m-3 formations-col gradient-text h-100">
+                    <!-- Mettez chaque item dans une carte bootstrap -->
+                    <img src="images/MELANCOLIE.png" alt="Echarpe" class="card-img-top"/>
+                    <div class="card-body" style="min-height: 130px">
+                        <h3>MONOSPACE<br><br></h3>
+                        <p>Ce beat rock explosif vous propulse sur scène avec ses guitares électriques puissantes et ses solos endiablés.</p>
+                    </div>
+                    <div class="card-footer">
+                        <button type="button" class="btn w-100 btn-outline-secondary btn-beat" target="_blank" data-bs-toggle="modal" data-bs-target="#echarpeModal" >Découvrir ce beat</button>
+                        <!-- <a href="https://www.beatstars.com/beat/geeked-16200315"  target="_blank" class="btn-beat">Découvrir ce beat</a> --> 
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6 mb-3">
+                <div class="card m-3 formations-col gradient-text h-100">
+                    <!-- Mettez chaque item dans une carte bootstrap -->
+                    <img src="images/L'HEURE DES SUSHIS.png" alt="Echarpe" class="card-img-top"/>
+                    <div class="card-body" style="min-height: 130px">
+                        <h3>L'HEURE DES SUSHIS<br></h3>
+                        <p>Une épopée cinématographique avec ce beat orchestral épique, idéal pour accompagner des moments héroïques.</p><br><br>
+                    </div>
+                    <div class="card-footer">
+                        <button type="button" class="btn w-100 btn-outline-secondary btn-beat" target="_blank" data-bs-toggle="modal" data-bs-target="#echarpeModal" >Découvrir ce beat</button>
+                        <!-- <a href="https://www.beatstars.com/beat/pygama-jersey-16200294"  target="_blank" class="btn-beat">Découvrir ce beat</a> --> 
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <section class="blog">
+        <div class=" m-auto">
+            <h3>A Propos de moi</h3>
+            <p>Salut à tous, je suis WOLFI, un passionné de musique depuis mon plus jeune âge. En tant que beatmaker dévoué, créateur de rythmes et architecte sonore, ma mission   consiste à donner vie aux émotions, à convertir les moments en mélodies et à transcrire les pensées en pulsations.</p>
+            <p>Rejoignez-moi dans cette aventure musicale. Écoutons, ressentons et partageons ensemble les vibrations de la musique. Ensemble, nous pouvons créer quelque chose de  magique, une œuvre qui restera gravée dans les cœurs et les esprits. C'est l'essence même de mon art en tant que beatmaker.</p>
+            <a href="blog.html" class="btn-beat">En savoir plus</a>
+
+        </div>
+    </section>
+
+    <!------------------------------------------------------------------------NOS SERVICES---------------------------------------------------------------------------->
+
+    <section class="container-services m">
+
+        <div id="nos-services">
+            <h2>Pourquoi me choisir ?</h2>
+            <p>En travaillant avec moi, vous bénéficiez d'une collaboration créative, d'une attention aux détails inégalée et de la promesse d'une musique qui transcendera les attentes. Que ce soit pour un projet personnel, une bande-son professionnelle ou simplement pour vous immerger dans un univers musical unique, je suis votre  partenaire idéal. Choisir WOLFI, c'est choisir l'art et la passion, la qualité et l'originalité. </p>
+        </div>
+
+    </section>
+
+    <section class="mx-auto my-4 ml-2 mr-2"> 
+        <div class="row-services">
+            <div class="nos-services-col">
+                <img src="images/Créateur.jpg" class="mx-auto">
+                <div>
+                    <h4>Créateur musical dévoué à votre succès</h4>
+                    <p>En me choisissant comme votre beatmaker, vous faites le choix d'un créateur musical passionné, dédié à la réalisation de votre vision artistique.</p>
+                </div>
+            </div>
+    
+            <div class="nos-services-col">
+                <img src="images/Créativité.jpg" class="mx-auto">
+                <div>
+                    <h4>Créativité Sans Limite</h4>
+                    <p>Explorez un monde de créativité illimitée grâce à des beats qui transcendent les frontières des genres, créés par un artiste passionné et innovant.</p>
+                </div>
+            </div> 
+        </div>
+    </section>
+    
+    <section class="mx-auto my-4">
+        <div class="row-services">
+            <div class="nos-services-col">
+                <img src="images/Collaboration.jpg" class="mx-auto">
+                <div>
+                    <h4>Collaboration Personnalisée</h4>
+                    <p>Bénéficiez d'une collaboration personnelle et sur mesure pour donner vie à votre vision musicale, ensemble chaque projet devient une expérience unique.</p>
+                </div>
+            </div>
+    
+            <div class="nos-services-col">
+                <img src="images/Qualité.jpg" class="mx-auto">
+                <div>
+                    <h4>Qualité Sonore Inégalée</h4>
+                    <p>Optez pour une qualité sonore exceptionnelle avec des compositions méticuleusement conçues et arrangées par WOLFI, garantissant un impact musical remarquable.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+
+
+    <!------------------------------------------------------------------------SECTION NEWSLETTERS--------------------------------------------------------------------->
+
+    <section id="newsletters">
+
+        <div class="text">
+            <h3>Restez informé de mes actualités</h3>
+            <p>Saisissez votre adresse email pour vous inscrire à ma newsletters</p>
+        </div>
+
+        <div class="form-newletters">
+            <input type="text" placeholder="votre adresse email">
+            <button class="inputbouton">M'inscrire</button>
+        </div>
+
+    </section>
+    
+    <!-- ****************************************************************************FOOTER------------------------------------------------------------------------------>
+
+    <footer class="bg-dark text-light text-end p-3">
+        <div class="container">
+            <div class="bg-dark text-white pt-1">
+                <p class="text-center mt-3">© 2023 WOFI BEATMAKER - Tous les droits sont réservés.</p>
+                <p class="text-center pb-2">Réalisation : Rosine-family</p>
+    
+                <div class="text-center">
+                    <a href="https://www.facebook.com/?locale=fr_FR" target="_blank" class="social-link me-3">
+                        <img src="images/Facebook.png" width="45" height="45" alt="icône Facebook" class="rounded-2">
+                    </a>
+                    <a href="https://twitter.com/?lang=fr" target="_blank" class="social-link me-3">
+                        <img src="images/twitter.png" width="45" height="45" alt="icône Twitter" class="rounded-2">
+                    </a>
+                    <a href="https://www.instagram.com/" target="_blank" class="social-link">
+                        <img src="images/Instagram.png" width="45" height="45" alt="icône Instagram" class="rounded-2">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    
+
+     <!------------------------------------------------------------------------------ MODAL ---------------------------------------------------------------------------------->
+
+     <div id="bouftouModal" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content bg-dark text-light">
+                <div class="modal-header">
+                    <h5>WOLFI BEATMAKER</h5>
+                    <button class="btn btn-close  custom-close" data-bs-dismiss="modal">x</button>
+                </div>
+                <div class="modal-body">
+                    <div class="d-flex justify-content-center align-items-center">
+                        <img src="images/BOUFTOU.png" alt="Echarpe" class="w-100" />
+    
+                        <!-- Ajoutez la balise audio pour lire le fichier MP3 -->
+                        <audio controls controlsList="nodownload" class="m-5">
+                            <source src="music/BOUFTOU.mp3" type="audio/mpeg">
+                            Votre navigateur ne prend pas en charge l'élément audio.
+                        </audio>
+                    </div>
+                </div>
+
+                <div class="modal-footer d-flex justify-content-center">
+                    <a href="https://www.beatstars.com/beat/bouftou-16200800" target="_blank" class="btn btn-primary" data-bs-toggle="tooltip" data-bs-placement="bottom">Acheter</a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+     <div id="playvComplet" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content bg-dark text-light">
+                <div class="modal-header">
+                    <h5>WOLFI BEATMAKER</h5>
+                    <button class="btn btn-close  custom-close" data-bs-dismiss="modal">x</button>
+                </div>
+                <div class="modal-body">
+                    <div class="d-flex justify-content-center align-items-center">
+                        <img src="images/PLAYV COMPLET.png" alt="Echarpe" class="w-100" />
+    
+                        <!-- Ajoutez la balise audio pour lire le fichier MP3 -->
+                        <audio controls controlsList="nodownload" class="m-5">
+                            <source src="music/BOUFTOU.mp3" type="audio/mpeg">
+                            Votre navigateur ne prend pas en charge l'élément audio.
+                        </audio>
+                    </div>
+                </div>
+
+                <div class="modal-footer d-flex justify-content-center">
+                    <a href="https://www.beatstars.com/beat/full-plav-16200765" target="_blank" class="btn btn-primary" data-bs-toggle="tooltip" data-bs-placement="bottom">Acheter</a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+     <div id="baltimore" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content bg-dark text-light">
+                <div class="modal-header">
+                    <h5>WOLFI BEATMAKER</h5>
+                    <button class="btn btn-close  custom-close" data-bs-dismiss="modal">x</button>
+                </div>
+                <div class="modal-body">
+                    <div class="d-flex justify-content-center align-items-center">
+                        <img src="images/BALTIMORE.png" alt="Echarpe" class="w-100" />
+    
+                        <!-- Ajoutez la balise audio pour lire le fichier MP3 -->
+                        <audio controls controlsList="nodownload" class="m-5">
+                            <source src="music/BOUFTOU.mp3" type="audio/mpeg">
+                            Votre navigateur ne prend pas en charge l'élément audio.
+                        </audio>
+                    </div>
+                </div>
+
+                <div class="modal-footer d-flex justify-content-center">
+                    <a href="https://www.beatstars.com/beat/baltimore-16200719" target="_blank" class="btn btn-primary" data-bs-toggle="tooltip" data-bs-placement="bottom">Acheter</a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+     <div id="paradis" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content bg-dark text-light">
+                <div class="modal-header">
+                    <h5>WOLFI BEATMAKER</h5>
+                    <button class="btn btn-close  custom-close" data-bs-dismiss="modal">x</button>
+                </div>
+                <div class="modal-body">
+                    <div class="d-flex justify-content-center align-items-center">
+                        <img src="images/PARADIS.png" alt="Echarpe" class="w-100" />
+    
+                        <!-- Ajoutez la balise audio pour lire le fichier MP3 -->
+                        <audio controls controlsList="nodownload" class="m-5">
+                            <source src="music/BOUFTOU.mp3" type="audio/mpeg">
+                            Votre navigateur ne prend pas en charge l'élément audio.
+                        </audio>
+                    </div>
+                </div>
+
+                <div class="modal-footer d-flex justify-content-center">
+                    <a href="https://www.beatstars.com/beat/paradise-16200523" target="_blank" class="btn btn-primary" data-bs-toggle="tooltip" data-bs-placement="bottom">Acheter</a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+     <div id="batiment" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content bg-dark text-light">
+                <div class="modal-header">
+                    <h5>WOLFI BEATMAKER</h5>
+                    <button class="btn btn-close  custom-close" data-bs-dismiss="modal">x</button>
+                </div>
+                <div class="modal-body">
+                    <div class="d-flex justify-content-center align-items-center">
+                        <img src="images/BATIMENT.png" alt="Echarpe" class="w-100" />
+    
+                        <!-- Ajoutez la balise audio pour lire le fichier MP3 -->
+                        <audio controls controlsList="nodownload" class="m-5">
+                            <source src="music/BOUFTOU.mp3" type="audio/mpeg">
+                            Votre navigateur ne prend pas en charge l'élément audio.
+                        </audio>
+                    </div>
+                </div>
+
+                <div class="modal-footer d-flex justify-content-center">
+                    <a href="https://www.beatstars.com/beat/building-16200447" target="_blank" class="btn btn-primary" data-bs-toggle="tooltip" data-bs-placement="bottom">Acheter</a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+     <div id="tshoeshot" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content bg-dark text-light">
+                <div class="modal-header">
+                    <h5>WOLFI BEATMAKER</h5>
+                    <button class="btn btn-close  custom-close" data-bs-dismiss="modal">x</button>
+                </div>
+                <div class="modal-body">
+                    <div class="d-flex justify-content-center align-items-center">
+                        <img src="images/TSHOESHOT.png" alt="Echarpe" class="w-100" />
+    
+                        <!-- Ajoutez la balise audio pour lire le fichier MP3 -->
+                        <audio controls controlsList="nodownload" class="m-5">
+                            <source src="music/BOUFTOU.mp3" type="audio/mpeg">
+                            Votre navigateur ne prend pas en charge l'élément audio.
+                        </audio>
+                    </div>
+                </div>
+
+                <div class="modal-footer d-flex justify-content-center">
+                    <a href="https://www.beatstars.com/beat/tshoeshot-16200680" target="_blank" class="btn btn-primary" data-bs-toggle="tooltip" data-bs-placement="bottom">Acheter</a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+
+
+    
+
+
+
+
+
+    
+    
+ 
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"     crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
+
+</body>
+</html>

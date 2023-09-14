@@ -1,0 +1,475 @@
+/*Style généreaux*/
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Cinzel Decorative', cursive;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    background: linear-gradient(to right, rgb(12, 5, 5), rgb(172, 155, 155));
+}
+
+.animation  {
+    margin: 0;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+h1 {
+    font-size: 40px;
+    line-height: 64px;
+    color: #d30f0f;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    transform: perspective(800px) rotateX(20deg);
+}
+
+h2 {
+    font-size: 30px;
+    line-height: 54px;
+    color: #fff;
+}
+
+h3 {
+    font-size: 24px;
+    line-height: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    transform: perspective(800px) rotateX(20deg);
+    color: #fff;
+}
+
+h4 {
+    font-size: 20px;
+    color: #fff;
+}
+
+p {
+    font-size: 15px;
+    margin: 15px 0 20px 0;
+    line-height: 30px;
+    color: #fff;
+}
+
+/* Créer un dégradé de couleur pour le texte */
+.gradient-text h3 {
+    background-image: linear-gradient(to right, rgb(201, 194, 194), rgb(218, 24, 24));
+    background-clip: text;
+    -webkit-background-clip: text; /* Prend en charge les anciennes versions de Webkit */
+    color: transparent; /* Rend le texte lui-même transparent */
+}
+
+/*----------------------------------------------------------------Barre de navigation----------------------------------------------------------------------------------------*/
+.logo {
+    max-width: 100px;
+    border-radius: 50%;
+}
+
+#nom {
+    text-align: center; 
+    text-decoration: none; 
+    display: block; 
+    margin-top: 10px; 
+    color: #e04747b3;
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: -4px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /*background: linear-gradient(to right, rgba(100, 100, 100, 1), rgba(200, 200, 200, 1));
+    background: linear-gradient(to right, rgba(200, 200, 200, 1), rgba(100, 100, 100, 1));*/
+    background: linear-gradient(to right, rgb(12, 5, 5), rgb(172, 155, 155));
+    padding: 20px 50px;
+    box-shadow: 0px 5px 15px #fff;
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+#topmenu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ 
+#topmenu li {
+    list-style: none;
+    padding: 0px 10px ;
+}
+
+#topmenu li a {
+    color: #d30f0f;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#topmenu li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background-color: #e46b6b;
+    display: block;
+    margin-left: 0px;
+    transition: 0.6s;
+}
+
+#topmenu li:hover::after {
+    width: 60%;
+    
+}
+
+/*----------------------------------------------------------Image nav-bar, text et bouton-----------------------------------------------------------------------------------*/
+
+.header {
+    
+
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.header h1 {
+    padding-bottom: 18px;
+}
+
+.header h3 {
+    padding-bottom: 15px;
+}
+
+.btn {
+    color: #fff;
+    display: inline-block;
+    border: 1px solid #d30f0f;
+    padding: 12px 34px;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    background: transparent;
+    cursor: pointer;
+    margin: 30px 0px;
+}
+
+.btn:hover {
+    border: 1px solid #e04747b3;;
+    background-color: #e04747b3;
+    transition: 0.6s;
+    
+}
+
+/*SECTION BEAT*/
+.formations {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 80px;
+}
+
+.row {
+    display: flex;
+    margin-top: 5%;
+    justify-content: space-between;
+}
+.formations-col {
+    flex-basis: 30%;
+    background: linear-gradient(to right, rgb(12, 5, 5), rgb(172, 155, 155));
+    border-radius: 10px;
+    margin-bottom: 5%;
+    box-sizing: border-box;
+    transition: 0.7s;
+    position: relative;
+}
+
+.formations-col img {
+    width: 100%;
+    max-height: 280px;
+    border-radius: 10px;
+}
+
+.formations-col h3 {
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.formations-col p {
+    padding: 10px 20px;
+}
+
+.formations-col:hover {
+    box-shadow:0 0 15px 0 #e46b6b;
+}
+
+.btn-beat {
+    display: inline-block;
+    color:  #e46b6b;
+    border: 1px solid #e46b6b;
+    padding: 12px 34px;
+    font-size: 16px;
+    text-transform: uppercase;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    margin: 10px 0 20px 0;
+    font-weight: 600;
+}
+
+.btn-beat:hover {
+    border: 1px solid #e46b6b;
+    background-attachment: #e46b6b;
+    color: rgb(196, 185, 185);
+    transition: 0.5s;
+}
+
+.blog {
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(56, 57, 58, 0.9),rgba(128, 132, 134, 0.9)),
+    url(../images/A\ PROPOS.png);
+    background-repeat: no-repeat;
+    background-size: cover; /* Ajuste l'image pour qu'elle couvre entièrement la section */
+    background-position: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 0 50px 0 0;
+}
+
+.apropos {
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(56, 57, 58, 0.9),rgba(128, 132, 134, 0.9)),
+    url(../images/Header2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; /* Ajuste l'image pour qu'elle couvre entièrement la section */
+    background-position: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 0 50px 0 0;
+}
+
+.apropos div {
+    width: 60%;
+}
+
+.apropos h1, h3 {
+    padding-bottom: 10px;
+}
+
+.apropos p {
+    padding-bottom: 10px;
+}
+
+/*---------------------------------------------SECTION-NOS SERVICES ET POURQUOI ME CHOISIR------------------------------------------------------------------------*/
+
+.container-services {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    background-color: #969a9c;
+    padding-top: 80px;
+}
+
+#nos-services {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+
+#nos-services p {
+    padding-bottom: 60px;
+}
+
+.row-services {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nos-services-col {
+    display: flex;
+    background: linear-gradient(to right, rgb(12, 5, 5), rgb(172, 155, 155));
+    margin-bottom: 5%;
+    padding: 30px;
+    text-align: left;
+    border-radius: 10px;
+    flex-basis: 45%;
+    box-shadow: 0px 0px 4px #e04747b3;
+}
+
+.nos-services-col img {
+    height: 40px;
+    margin-left: 5px;
+    margin-right: 24px;
+    border-radius: 10px;
+}
+
+
+/*--------------------------------------------------section newsletters------------------------------------------------------------------------------------------------------*/
+
+#newsletters {
+    background: linear-gradient(to right, rgb(44, 44, 44), rgb(175, 173, 173));
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 50px 120px;
+}
+
+#newsletters h3 { 
+    font-size: 32px;
+}
+
+#newsletters p {
+    font-size: 18px;
+}
+
+.form-newletters {
+    display: flex;
+    width: 36%;
+}
+
+.form-newletters input {
+    height: 3.5em;
+    padding: 0px 1.4em;
+    font-size: 14px;
+    width: 100%;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.inputbouton {
+    background-color: #e04747b3;
+    height: 3.5em;
+    padding: 0px 1.4em;
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.inputbouton:hover {
+    background-color: rgb(77, 27, 27);
+    transition: 0.6s;
+    cursor: pointer;
+}
+
+/*----------------------------------------------------------SECTION FORMULAIRE DE CONTACTE-----------------------------------------------------------------------------*/
+.contact-form {
+	width: 100%;
+	margin: auto;
+	background-image: url("../images/datascience.jpg");
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+.form {
+	width: 50%;
+	background-color: #F0F1F3;
+	margin: 70px auto;
+	padding: 50px;
+	border-radius: 10px;
+}
+
+.form h4 {
+	color: #4A4948;
+	font-size: 26px;
+	font-weight: 600;
+	margin-bottom: 16px;
+	line-height: 30px;
+}
+
+.form p {
+	color: #4A4948;
+	font-size: 15px;
+	padding-bottom: 10px;
+}
+
+.row-form {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.row-form input {
+	width: 48%;
+	font-size: 14px;
+	font-weight: 400;
+	border-radius: 5px;
+	border:none;
+	background-color: #FFF;
+	color: #4A4948;
+	outline: none;
+	padding: 15px 20px;
+	margin-bottom: 20px;
+
+}
+
+.row-col-form input,
+.row-col-form textarea {
+
+	width: 100%;
+	font-size: 14px;
+	font-weight: 400;
+	border-radius: 5px;
+	border: none;
+	background-color: #FFF;
+	color: #4A4948;
+	padding: 15px 20px;
+	margin-bottom: 20px;
+
+}
+
+.row-col-form button {
+	width: 100%;
+	font-size: 20px;
+	padding: 12px 20px;
+	background-color: #1B2148;
+	border: none;
+	color: #FFF;
+	border-radius: 5px;
+	cursor: pointer;
+	font-weight: 700;
+}
+
+.row-col-form button:hover {
+	background-color: #1F7DF5;
+	transition: 0.6s;
+}
+
+/*-------------------------------------------------- Styles personnalisés pour le soulignement rouge fin  de la modal-----------------------------------------------------*/
+.custom-close {
+    color: white; /* Définissez la couleur du texte en blanc */
+}
+/*-------------------------------------------------- ANIMATION DEBUT DE PAGE-----------------------------------------------------*/
+
